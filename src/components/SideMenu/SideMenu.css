@@ -1,0 +1,67 @@
+.side-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    background-color: rgba(21, 100, 75);
+    height: 100vh;
+    width: 90px;
+    z-index: 4;
+}
+.side-menu.active{
+    width: 300px;
+}
+.side-menu h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    display: none;
+}
+.side-menu h2.active{
+    display: block;
+}
+
+.side-menu ul{
+    flex-direction: column;
+}
+.side-menu ul li a{
+    display: flex;
+}
+.side-menu ul li a div , .side-menu ul li div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    color: black;
+} 
+.side-menu div:hover{
+    background-color: rgba(57, 191, 149, 0.2);
+}
+.log-out:hover{
+    color: red;
+}
+.back{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 20px;
+    display: none;
+}
+@media screen and (max-width:700px) {
+    .side-menu{
+        width: 100%;
+        left: -100%;
+    }
+    .side-menu.active{
+        left: 0;
+        width: 100%;
+    }
+    .back{
+        display: block;
+    }
+}

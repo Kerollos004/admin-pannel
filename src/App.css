@@ -1,0 +1,70 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all .4s ease;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  font-family: "Josefin Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+a{
+  display: inline-block;
+  text-decoration: none;
+}
+ul{
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+.container{
+  position: relative;
+  top: 0;
+  left: 90px;
+  width: calc(100% - 90px);
+  padding: 20px;
+  padding-top:90px ;
+  min-height: 100vh;
+}
+.dark-mode{
+  background: rgb(0, 0, 0 , .88);
+}
+.container.active{
+  left: 300px;
+  width: calc(100% - 300px);
+}
+img{
+  object-fit: cover;
+}
+canvas{
+  width: 100% !important;
+  height: 100% !important;
+  display: inline-block !important;
+}
+form{
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(218, 214, 214);
+}
+input{
+    padding: 8px;
+    font-size: 17px;
+    border-radius: 10px;
+    border: 1px solid rgba(21, 100, 75, 0.69);
+    background-color: transparent;
+}
+input::placeholder{
+    color: black;
+}
+input:focus{
+    background-color: rgba(21, 100, 75, .2);
+}
+@media screen and (max-width:700px) {
+  .container , .container.active{
+    width: 100%;
+    left: 0;
+  }
+}
