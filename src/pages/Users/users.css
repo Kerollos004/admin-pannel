@@ -70,7 +70,11 @@
 .canceled{
     background-color: red;
 }
-
+.no{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
 @media screen and (max-width:700px) {
     .head{
         flex-direction: column;

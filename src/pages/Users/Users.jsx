@@ -27,7 +27,12 @@ export default function Users() {
   }
   
   useEffect(() => {
-    getUsers()
+    if (data.length == 0) {
+      return <h3 className="no">no users</h3>
+    }
+    else {
+      getUsers()
+    }
   },[])
 
   const deleteUser = async (id) => {
