@@ -75,7 +75,7 @@ export default function Users() {
   })
 
   const renderUsers = () => {
-    if (input.trim === "") {
+    if (input.trim() === "") {
       return users.length>0?usersHtml: <h3 className="no">no users found</h3>
     }
     else {
@@ -93,7 +93,7 @@ export default function Users() {
             </div>
             <div className="users">
               {
-                renderUsers
+                renderUsers()
               }
               
             </div>
