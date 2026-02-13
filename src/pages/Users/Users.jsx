@@ -27,12 +27,8 @@ export default function Users() {
   }
   
   useEffect(() => {
-    if (data.length == 0) {
-      return <h3 className="no">no users</h3>
-    }
-    else {
+
       getUsers()
-    }
   },[])
 
   const deleteUser = async (id) => {
@@ -77,6 +73,15 @@ export default function Users() {
       </div>
     )
   })
+
+  const renderUsers = () => {
+    if (input.trim === "") {
+      return users.length>0?usersHtml: <h3 className="no">no users found</h3>
+    }
+    else {
+      return searchedUsersHtml
+    }
+  }
       return (
         <div >
           <SideMenu activeMenu={activeMenu } setActiveMenu={setActiveMenu} />
@@ -87,7 +92,10 @@ export default function Users() {
               <input onKeyUp={()=>{searchUsers()}} value={input} onChange={(e)=>{setInput(e.target.value)}} type="text" placeholder='search users' />
             </div>
             <div className="users">
-              {input == "" ? usersHtml : searchedUsersHtml}
+              {
+                
+              }
+              
             </div>
 
           </div>
