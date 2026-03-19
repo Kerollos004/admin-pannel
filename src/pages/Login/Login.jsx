@@ -116,7 +116,7 @@ useEffect(() => {
 
         </div>
         <a href="#" onClick={ currentState == "login" ? login : createAccount } >{currentState }</a>
-        <a href="#" onClick={googleLogin}> log with google </a>
+        <a href="#"  onClick={googleLogin}> signin with google </a>
         <div className="other">
           <p> {currentState=="login"?"don,t have an account ?":" already have an account ?"} </p>
           <a href="#" onClick={handleBtn}> {currentState == "login" ? "create account" : "login"} </a>
