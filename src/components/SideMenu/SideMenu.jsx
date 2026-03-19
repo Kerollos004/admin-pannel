@@ -54,8 +54,6 @@ export default function SideMenu({ activeMenu , setActiveMenu }) {
   
   return (
     <div className={activeMenu?'side-menu active':'side-menu'}>
-        <h2 className={activeMenu?'active':''}> brand name </h2>
-
       <ul>
         <li>
           <Link to={"/dashboard"}>
