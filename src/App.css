@@ -32,6 +32,12 @@ ul{
 .dark-mode{
   background: rgb(0, 0, 0 , .88);
 }
+.dark-mode h2{
+  color: white;
+}
+.dark-mode input{
+  border-color: white;
+}
 .container.active{
   left: 300px;
   width: calc(100% - 300px);
