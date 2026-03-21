@@ -49,6 +49,7 @@ canvas{
   width: 100% !important;
   height: 100% !important;
   display: inline-block !important;
+  color: black;
 }
 form{
     padding: 20px;

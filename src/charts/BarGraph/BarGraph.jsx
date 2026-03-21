@@ -38,7 +38,7 @@ const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
     {
       label: 'Dataset 1',
       data: labels.map(() => faker.number.int({ min: 0, max: 1000 })),
-      backgroundColor: 'rgba(13, 40, 120, 0.8)',
+      backgroundColor: 'rgba(13, 40, 120)',
     }
 
   ],
