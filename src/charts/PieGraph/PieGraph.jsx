@@ -17,7 +17,7 @@ ChartJS.register(ArcElement, Tooltip, Legend , Title)   ;
 
 const data = {
 
-  labels: ['pro1', 'pro2', 'pro3', 'pro4', 'pro5', 'pro6','pro7', 'pro8', 'pro9', 'pro10', 'pro11', 'pro12'],
+  labels: ['pro1', 'pro2', 'pro3', 'pro4', 'pro5', 'pro6'],
   datasets: [
     {
       label: '# of Votes',
@@ -29,12 +29,7 @@ const data = {
         'rgba(75, 192, 192 )',
         'rgba(153, 102, 255)',
         'rgba(255, 159, 64 )',
-        'rgba(255, 99, 132 )',
-        'rgba(54, 162, 235 )',
-        'rgba(255, 206, 86 )',
-        'rgba(75, 192, 192 )',
-        'rgba(153, 102, 255)',
-        'rgba(255, 159, 64 )',
+
       ],
       borderColor: [
         'rgba(255, 99, 132, 1)',

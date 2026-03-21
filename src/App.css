@@ -30,7 +30,7 @@ ul{
   min-height: 100vh;
 }
 .dark-mode{
-  background: rgba(70, 69, 69, 0.88);
+  background: #464545;
 }
 .dark-mode h2{
   color: white;
@@ -59,7 +59,7 @@ input{
     padding: 8px;
     font-size: 17px;
     border-radius: 10px;
-    border: 1px solid rgba(21, 100, 75, 0.69);
+    border: 1px solid white;
     background-color: transparent;
 }
 input::placeholder{
